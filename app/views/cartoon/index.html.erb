@@ -1,0 +1,33 @@
+<h1>Rick and Morty API</h1>
+<div>
+	<h2>Base url: https://rickandmortyapi.com/api</h2>
+	<p>The base url contains information about all available API's resources. All requests are GET requests and go over https. All responses will return data in json</p>
+	<p>There are currently three available resources:</p>
+	<ol>
+		<li>Character: used to get all the characters.</li>
+		<li>Location: used to get all the locations.</li>
+		<li>Episode: used to get all the episodes.</li>
+	</ol>
+</div>
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">Character Id</th>
+				<th scope="col">Character Image</th>
+				<th scope="col">Character Name</th>
+				<th scope="col">Link to More Details about the character</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @cartoon["results"].each do |character| %>
+			<tr class="<%= cycle('even', 'odd') %>">
+				<td><%= character['id'] %></td>
+				<td><%= image_tag character['image'] %></td>
+				<td><%= character['name'] %></td>
+				<td><%= link_to "More Details", cartoon_details_path(:id => character['id']) %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>	
+</div>

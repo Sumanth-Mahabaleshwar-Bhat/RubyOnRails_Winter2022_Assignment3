@@ -1,2 +1,24 @@
-# RubyOnRails_Winter2022_Assignment3
-This repository contains the assignment 3 of Prototyping Web &amp; Mobile Applications using Ruby on Rails development Course during Winter term 2022 of Master of Engineering in Electrical and Computer Engineering
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

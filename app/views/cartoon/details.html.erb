@@ -1,0 +1,28 @@
+<div class="table-responsive">
+	<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">Character Image</th>
+			<th scope="col">Character Id</th>
+			<th scope="col">Character Name</th>
+			<th scope="col">Character Status</th>
+			<th scope="col">Character Species</th>
+			<th scope="col">Character Gender</th>
+			<th scope="col">Episodes appeared in</th>
+			<th scope="col">Origin</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= image_tag @cartoon['image'] %></td>
+			<td><%= @cartoon['id'] %></td>
+			<td><%= @cartoon['name'] %></td>
+			<td><%= @cartoon['status'] %></td>
+			<td><%= @cartoon['species'] %></td>
+			<td><%= @cartoon['gender'] %></td>
+			<td><%= @cartoon['episode'] %></td>
+			<td><%= @cartoon["origin"]['name'] %></td>
+		</tr>
+	</tbody>
+	</table>
+</div>
